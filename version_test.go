@@ -34,3 +34,12 @@ func TestRepository_GetVersionInformation(t *testing.T) {
 	assert.Nil(t, err)
 	t.Log(version)
 }
+
+func TestRepository_DownloadVersionZip(t *testing.T) {
+	r, err := NewRepository(NewRepositoryOptionsWithGoProxyCN())
+	assert.Nil(t, err)
+
+	zip, err := r.DownloadVersionZip(context.Background(), "github.com/aliyun/aliyun-oss-go-sdk", "v2.2.4+incompatible")
+	assert.Nil(t, err)
+	assert.True(t, len(zip) > 0)
+}
