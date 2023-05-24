@@ -11,11 +11,11 @@ import (
 const (
 	DefaultIndexServerURL = "https://index.golang.org"
 
-	DefaultProxyServerURL = "https://proxy.golang.org/"
+	DefaultProxyServerURL = "https://proxy.golang.org"
 )
 
 // ProxyServerURLGoProxyCN 在国内使用这个速度会更快
-const ProxyServerURLGoProxyCN = "https://goproxy.cn/"
+const ProxyServerURLGoProxyCN = "https://goproxy.cn"
 
 // ------------------------------------------------- --------------------------------------------------------------------
 
