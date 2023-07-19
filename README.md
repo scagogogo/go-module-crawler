@@ -14,15 +14,15 @@ go get -u github.com/scagogogo/go-module-crawler
 
 ## 3.1 创建仓库实例 
 
-首先需要介绍一下仓库的概念，我们认为仓库是一个托管go module的地方，通常情况下指的是`https://proxy.golang.org`和`https://index.golang.org`，仓库提供了两个功能：
+首先需要介绍一下仓库的概念，我们认为仓库是一个托管`go module`的地方，通常情况下指的是`https://proxy.golang.org`和`https://index.golang.org`，仓库提供了两个功能：
 
-- 通过`Proxy Server URL `来获取模块和它的版本的相关信息或者安装包
+- 通过`Proxy Server URL`来获取模块和它的版本的相关信息或者安装包
 - 通过`Index Server URL`根据时间排序来遍历整个仓库中的所有的包 
 
 仓库需要设置两个必须的参数：
 
-- Proxy Server URL ，默认值是`https://proxy.golang.org`，国内用户推荐设置为`https://goproxy.cn`
-- Index Server URL ，默认值是`https://index.golang.org`
+- `Proxy Server URL` ，默认值是`https://proxy.golang.org`，国内用户推荐设置为`https://goproxy.cn`
+- `Index Server UR`L ，默认值是`https://index.golang.org`
 
 还有一个可选的参数：
 
